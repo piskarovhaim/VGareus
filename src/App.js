@@ -1,19 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
+import NavBar from './components/layouts/NavBar';
+import Home from './components/pages/Home';
+import Game from './components/pages/Game'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
-import HomePage from './HomePage'
-import Game from './VGDetails'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
     <Router>
+        <NavBar title="VGAREUS" titleSmall="VGRUS" icon="fa fa-gamepad"/>
         <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route path="/Game/:name" exact component={Game} />
+          <Route exact path='/' component={Home}/>
+          <Route exact path="/Game/:name" component={Game} />
         </Switch>
     </Router>
-    
   );
 }
 

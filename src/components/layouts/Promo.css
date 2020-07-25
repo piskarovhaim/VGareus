@@ -1,0 +1,33 @@
+
+.mainDiv{
+    position: relative;
+    top: -16px;
+}
+
+.logoCont{
+    margin-top: 600px;
+}
+
+.btnSm{
+    margin-top: 90%;
+}
+
+.bg-big{
+    position: relative;
+    background: url(../assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    min-height: 615px;
+    width: 100%;
+}
+
+.bg-sm{
+    background: url(../assets/images/bg-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 100%;
+    min-height: 615px;
+}
