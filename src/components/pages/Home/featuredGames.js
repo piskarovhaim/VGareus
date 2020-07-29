@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import firebase from "../../../Firebase/FireBase.js";
+import firebase from "FirebaseDB";
 import GamesContainer from '../../layouts/GamesContainer'
 
 class FeaturedGames extends Component {

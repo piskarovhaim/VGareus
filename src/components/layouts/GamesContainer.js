@@ -5,6 +5,7 @@ import Spinner from './Spinner'
 
 function GamesContainer (props) {
     const { isLoaded , gameList } = props
+    // maping the game list element or set 'no games'
     const GameList = gameList?.length > 0 ? gameList.map(game=> <GameItem key={game.name} game={game}/>) : 'No Games'
     return (
         <div className="bg-dark containorGames p-5 text-center">

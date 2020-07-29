@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import picture from '../assets/images/sample.jpg';
 import './Game.css';
 
  const Game = props => {

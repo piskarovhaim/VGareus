@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GameLayout from '../../layouts/Game';
 import Spinner from '../../layouts/Spinner';
-import firebase from "../../../Firebase/FireBase.js";
+import firebase from "FirebaseDB";
 
 class Game extends Component {
 
@@ -20,12 +20,11 @@ class Game extends Component {
         let currentComponent = this;
         currentComponent.setState({isLoaded:false,error:false})
         const docRef = firebase.firestore().collection("GameList").doc(name);
-
+        // get game data from firebase
         docRef.get().then(function(doc) {
             if (doc.exists) {
                 currentComponent.setState({game:doc.data(),isLoaded:true})
             } else {
-                // doc.data() will be undefined in this case
                 currentComponent.setState({error:"No such Game!"})
             }
         }).catch(function(error) {
@@ -36,7 +35,6 @@ class Game extends Component {
       
     render() {
         const { game , isLoaded , error} = this.state
-
         if(error)
             return (<h1>{error}</h1>)
 

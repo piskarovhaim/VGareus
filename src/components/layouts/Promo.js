@@ -7,7 +7,7 @@ const Promo = () => {
                 <div className="d-none bg-big d-md-inline-block">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-8 mt-5 d-none d-md-block text-center">
+                            <div className="col-md-8 mt-5 d-none d-md-block text-center" alt="home">
                                 <img className="logoCont mt-5 pt-5"
                                     src="https://media.contentapi.ea.com/content/dam/apex-legends/common/logos/apex-medium-dark-logo.svg">
                                 </img>
