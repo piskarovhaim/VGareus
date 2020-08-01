@@ -1,3 +1,36 @@
 .decoration{
     height: 20vh;
 }
+
+.directionText{
+    direction: rtl;
+}
+
+
+.topBox{
+    padding: 5% 15% 0% 15%;
+}
+
+#module {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  
+  #module #collapseExample.collapse:not(.show) {
+    display: block;
+    height: 6rem;
+    overflow: hidden;
+  }
+  
+  #module #collapseExample.collapsing {
+    height: 6rem;
+  }
+  
+  #module a.collapsed::after {
+    content: 'קרא עוד..';
+  }
+  
+  #module a:not(.collapsed)::after {
+    content: 'קרא פחות..';
+  }

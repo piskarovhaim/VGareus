@@ -1,6 +1,6 @@
 import React from 'react';
 import './GamesContainer.css'
-import { GameItem } from './GameItem';
+import GameItem from './GameItem';
 import Spinner from './Spinner'
 
 function GamesContainer (props) {
@@ -10,7 +10,7 @@ function GamesContainer (props) {
     return (
         <div className="bg-dark containorGames p-5 text-center">
             <h1 className="h1 text-white ">Featured Games</h1>
-            {isLoaded ? GameList : <Spinner/>}
+            {isLoaded ? <div className="row p-5">{GameList}</div> : <Spinner/>}
         </div>
     )
 }
