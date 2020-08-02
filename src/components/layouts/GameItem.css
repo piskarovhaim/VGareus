@@ -33,18 +33,18 @@
   }
   
   .hovereffect:hover img {
-    opacity: 0.4;
+    opacity: 0.2;
     filter: alpha(opacity=40);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
   
   .hovereffect h2 {
-    text-transform: uppercase;
+    font-family: carmela;
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 24px;
     overflow: hidden;
     padding: 0.5em 0;
     background-color: transparent;
@@ -84,4 +84,8 @@
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+  }
+
+  .buttunText{
+      font-family: carmela;
   }

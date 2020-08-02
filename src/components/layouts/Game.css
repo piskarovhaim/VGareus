@@ -6,6 +6,13 @@
     direction: rtl;
 }
 
+.headline{
+  font-family: haimke;
+}
+
+.descrip{
+  font-family: carmela;
+}
 
 .topBox{
     padding: 5% 15% 0% 15%;
@@ -34,3 +41,4 @@
   #module a:not(.collapsed)::after {
     content: 'קרא פחות..';
   }
+

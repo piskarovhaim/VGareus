@@ -15,12 +15,12 @@ import './NavBar.css';
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
+                    <ul className="navbar-nav ml-auto ">
+                        <li className="nav-item ">
+                            <Link className="nav-link" to="/about"><span className="font-types">אודות</span></Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">About</Link>
+                            <Link className="nav-link" to="/"><span className="font-types">בית</span></Link>
                         </li>
                     </ul>
                 </div>

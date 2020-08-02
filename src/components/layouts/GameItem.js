@@ -28,7 +28,7 @@ class GameItem extends Component {
                     <img className="img-responsive" src={img} alt=""/>
                         <div className="overlay">
                             <h2 className="h2">{name}</h2>
-                            <Link to={`/Game/${name}`}><button className="mt-5 btn-lg btn-outline-light">לרכישה</button></Link>
+                            <Link to={`/Game/${name}`}><button className="buttunText mt-5 btn-lg btn-outline-light">לרכישה</button></Link>
                         </div>
                     </div>
                 </div>

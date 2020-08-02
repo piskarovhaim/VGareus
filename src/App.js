@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from 'components/layouts/NavBar';
 import Home from './components/pages/Home';
-import Game from './components/pages/Game'
+import Game from './components/pages/Game';
+import About from './components/pages/About/About';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path="/Game/:name" component={Game} />
+          <Route exact path="/About" component={About} />
         </Switch>
     </Router>
   );
