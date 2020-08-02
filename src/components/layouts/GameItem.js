@@ -23,17 +23,16 @@ class GameItem extends Component {
     
         const { name , img } = game
         return(
-            <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 imghov'>
-                <img src={img} alt="" className='img-responsive img-fluid mt-4'/>
-                <div className="overlay ctr">
-                    <div className="container">
-                        <h4 className="h4 text-white mt-3">{name}</h4>
-                        <Link to={`/Game/${name}`}><button id="#button-click" className="mt-5 btn-lg btn-outline-light">לרכישה</button></Link>
-                     
+            <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 p-2'>
+                <div className="hovereffect">
+                    <img className="img-responsive" src={img} alt=""/>
+                        <div className="overlay">
+                            <h2 className="h2">{name}</h2>
+                            <Link to={`/Game/${name}`}><button className="mt-5 btn-lg btn-outline-light">לרכישה</button></Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-        )
+                )
       } 
 }
 export default GameItem;

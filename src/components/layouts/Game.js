@@ -18,7 +18,7 @@ import PayWith from './PayWith';
             <div className="container topBox">
                 <div className="row">
                     <div className="col-sm-6 col-md-6 col-lg-5 col-xl-4">
-                        <img src={img} alt="" className='img-fluid'/>
+                        <img src={img} alt="" className='align-middle img-fluid' style='width:100%'/>
                     </div>
                     <div id="module" className="col-sm-6 col-md-6 col-lg-7 col-xl-8 text-right">
                         <h1 className="h1">{name}</h1>
