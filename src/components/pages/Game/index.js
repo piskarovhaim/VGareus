@@ -16,11 +16,10 @@ class Game extends Component {
     }
 
     componentDidMount() {
-        const {name} = this.props?.match?.params || ''
+        const {id} = this.props?.match?.params || ''
         let currentComponent = this;
         currentComponent.setState({isLoaded:false,error:false})
-        const docRef = firebase.firestore().collection("GameList").doc(name);
-        // get game data from firebase
+        const docRef = firebase.firestore().collection("GameList").doc(id); // get game data from firebase
         docRef.get().then(function(doc) {
             if (doc.exists) {
                 currentComponent.setState({game:doc.data(),isLoaded:true})

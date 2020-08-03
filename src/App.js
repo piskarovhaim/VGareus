@@ -13,7 +13,7 @@ function App() {
         <NavBar title="VGAREUS" titleSmall="VGRUS" icon="fa fa-gamepad"/>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route exact path="/Game/:name" component={Game} />
+          <Route exact path="/Game/:id" component={Game} />
           <Route exact path="/About" component={About} />
         </Switch>
     </Router>

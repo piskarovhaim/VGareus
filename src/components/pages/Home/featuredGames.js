@@ -18,10 +18,10 @@ class FeaturedGames extends Component {
         
         let currentComponent = this;
         currentComponent.setState({isLoaded:false})
-        firebase.firestore().collection("GameList").get()   // read from the database all the games
+        firebase.firestore().collection("GameList").get()   // get all the games from the database 
           .then(res => {
                 let tempArr = []
-                res.forEach(doc => tempArr.push(doc.data()));
+                res.forEach(doc => tempArr.push({...doc.data(),id:doc.id}));
                 currentComponent.setState({isLoaded:true,gameList:tempArr})
           })
           .catch(function(error) {
